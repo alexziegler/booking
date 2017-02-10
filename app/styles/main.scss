@@ -25,21 +25,20 @@ header {
 }
 
 .facilities-container {
-  display: flex;
   padding: 0;
   list-style: none;
-  justify-content: space-between;
-  flex-wrap: wrap;
+
+  column-count: 3;
 }
 
 .facilities-category {
   padding: 10px;
   margin-bottom: 20px;
-  flex-basis: 32%;
-  flex-grow: 0;
   background: #e9f0fa;
   border: 1px darken(#e9f0fa,3%) solid;
   border-radius: 3px;
+
+  break-inside: avoid;
 
   &.free {
     color: rgba(white,.9);
