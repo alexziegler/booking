@@ -61,6 +61,7 @@ header {
     border-bottom: 1px darken(#e9f0fa,8%) solid;
 
     &:last-child {
+      padding-bottom: 0;
       border-bottom: none;
     }
   }
