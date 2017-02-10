@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'booking-icons';
+
+  src: url('../fonts/booking-icons.woff') format('woff'),; /* Pretty Modern Browsers */
+}
+
+.icon {
+  display: inline-block;
+  font-family: 'booking-icons';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+
+  &.bathroom::before {
+    content: "\b138";
+  }
+
+  &.bed::before {
+    content: "\b049";
+  }
+
+  &.pet-friendly::before {
+    content: "\b07e";
+  }
+
+  &.golf::before {
+    content: "\b065";
+  }
+
+  &.flat-tv::before {
+    content: "\b13c";
+  }
+
+  &.couch::before {
+    content: "\b151";
+  }
+
+  &.plate-fork::before {
+    content: "\b0e9";
+  }
+
+  &.wifi::before {
+    content: "\b004";
+  }
+
+  &.parking::before {
+    content: "\b078";
+  }
+
+  &.check-mark::before {
+    content: "\b188";
+  }
+
+  &.front-desk::before {
+    content: "\b155";
+  }
+
+  &.washer::before {
+    content: "\b0ec";
+  }
+
+  &.briefcase::before {
+    content: "\b189";
+  }
+
+  &.infobold::before {
+    content: "\b345";
+  }
+
+  &.concierge::before {
+    content: "\b016";
+  }
+}

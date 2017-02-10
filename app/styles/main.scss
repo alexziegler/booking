@@ -1,92 +1,107 @@
 $icon-font-path: '../fonts/';
+$dummy-image-path: '../images/hotel.jpg';
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "icons.scss";
 // endbower
 
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+header {
+  height: 105px;
+  background: url('../images/header.jpg') top center;
 }
 
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.flex-container {
+  display: flex;
+  justify-content: center;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 15px;
-  padding-left: 15px;
+.left-column {
+  width: 264px;
+  margin-right: 20px;
 }
 
-/* Custom page header */
-.header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
+.right-column {
+  width: 814px;
 }
 
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
+.facilities-container {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
+.facilities-category {
+  padding: 10px;
+  margin-bottom: 20px;
+  flex-basis: 32%;
+  flex-grow: 0;
+  background: #e9f0fa;
+  border: 1px darken(#e9f0fa,3%) solid;
+  border-radius: 3px;
 
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
+  &.free {
+    color: rgba(white,.9);
+    background: #0ab21b;
+    border-color: darken(#0ab21b,3%);
+
+    h5 {
+      color: white;
+    }
   }
 }
-.container-narrow > hr {
-  margin: 30px 0;
+
+.facilities-detail {
+  padding: 0;
+  color: rgba(#003580, .7);
+  list-style: none;
+
+  li {
+    padding: 3px 0;
+    border-bottom: 1px darken(#e9f0fa,8%) solid;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
+h3 {
+  font-size: 1.6em;
+  font-weight: normal;
+  color: #003580;
+
+  span {
+    display: inline-block;
+    padding: 5px;
+    font-size: .6em;
+    color: #003580;
+    vertical-align: middle;
+    background: #e9f0fa;
+    border-radius: 3px;
+  }
+}
+
+h5 {
+  display: flex;
+  margin: 0;
+  margin: 0 0 .5em 0;
+  font-size: 1.3em;
+  font-weight: 400;
+  color: #003580;
+  justify-content: space-between;
+
+  .icon {
+    margin-left: 10px;
+  }
+}
+
+.wide {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+footer {
+  height: 904px;
+  background: url('../images/footer.jpg') top center;
 }
