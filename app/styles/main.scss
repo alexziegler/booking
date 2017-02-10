@@ -1,8 +1,6 @@
-$icon-font-path: '../fonts/';
-$dummy-image-path: '../images/hotel.jpg';
+@import "icons.scss";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import "icons.scss";
 // endbower
 
 header {
